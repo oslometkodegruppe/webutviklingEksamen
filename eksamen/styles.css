@@ -1,26 +1,80 @@
-main {
-text-align: center; 
-background-color: #f1ecda;
-}
-p {font-size: 25px;}
-#mainImg 
+/* 
+    CSS for alle sidene
+*/
+main 
 {
-height: 200px;
+    text-align: center; 
+    background-color: #f1ecda;
+}
+nav
+{
+    padding-top: 50px;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+  
+li 
+{
+    float: left;
+    font-size: 1.2em;
 }
 
-h1{ 
-color: black;
-text-align: center;
+li a 
+{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+#resturantLogo
+{
+    position: relative; left: -20%; font-family: "Lucida Handwriting", "Courier New", monospace;
+}
+p 
+{
+    font-size: 25px;
+}
+strong
+{
+    font-size: 25px;
+}
+h1
+{ 
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+}
+    
+h2
+{
+    color: black;
+    text-align: center; 
+    margin-left:40px;
+    font-size: 2.5em; 
+}
+#button
+{
+    background-color: burlywood;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 15px 32px;
 }
 
-h2{
-color: black;
-text-align: left; 
-margin-left:40px;
-font-size: 2.5em; }
+hr
+{
+    margin-top: 30px;
+}
 
-#indexMeny{height: 325px; width: 50%; background-color: #f9f9f6; text-align: left; left: 150px; position: relative; }
-#indexMenyImg{position: relative; left: 420px; height: 400px; top: -325px;}
 #divkontaktInfo1
 {
     margin:auto;
@@ -30,26 +84,48 @@ font-size: 2.5em; }
     background-color: black;
     color: white;
     position: relative;
-    height: 300px;
+    height: auto;
 }
-#divkontaktInfo2
+#kontakt
 {
-    position: absolute;
-    left: 10px;
-    top: 20px;
+    display: inline-block;
 }
-#divkontaktInfo3
+/*
+  CSS for index siden
+*/
+
+#mainImg 
 {
-    position: absolute;
-    left: 600px;
-    top: 20px;
+    height: 500px;
+    width: 100%;
 }
-#divkontaktInfo4
+
+#indexMeny
 {
-    position: absolute;
-    left: 250px;
-    top: 0px;
-    width: 200px;
+    height: 325px; 
+    width: 50%; 
+    background-color: #f9f9f6; 
+    text-align: left; 
+    left: 150px; 
+    position: relative;
 }
+#menyH2
+{
+    color: black;
+    text-align: left;
+    margin-left:40px;
+    font-size: 2.5em; 
+}
+#indexMenyImg
+{
+    position: relative; 
+    left: 420px; 
+    height: 325px; 
+    top: -325px;
+    margin-bottom: -325px;
+}
+
+
+
 
 
