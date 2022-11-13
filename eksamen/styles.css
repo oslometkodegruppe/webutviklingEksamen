@@ -9,7 +9,9 @@ main
 }
 nav
 {
-    padding-top: 50px;
+    padding-top: 40px;
+    background-color: black;
+    height: 120px;
 }
 ul 
 {
@@ -31,11 +33,11 @@ li a
     display: block;
     padding: 8px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 #resturantLogo
 {
-     font-family: "Lucida Handwriting", "Courier New", monospace; float: left;
+    float: left; position: relative; top: -15%; width: 15%; height: 90%; margin-bottom: -100px;
 }
 p 
 {
@@ -77,9 +79,9 @@ hr
     margin-top: 30px;
 }
 
-#divkontaktInfo1
+#divKontaktInfo
 {
-    margin:auto;
+    /* margin:auto; */
     text-align: center;
     border: 2px solid;
     padding: 25px;
@@ -87,10 +89,40 @@ hr
     color: white;
     position: relative;
     height: auto;
+    font-size: 1em !important;
 }
+/* Code from https://stackoverflow.com/questions/4189868/what-does-media-screen-and-max-width-1024px-mean-in-css
+Makes the code run if the width is less then the specified amount */
+@media screen and (max-width: 1000px){
+    #divKontaktInfo p
+    {
+        font-size: 10px;
+    }
+    #divKontaktInfo strong
+    {
+        font-size: 10px;
+    }
+    #resturantLogo
+    {
+        left: 30%; 
+        top: 0px;
+        width: 50%;
+        height: 70%;
+        position: none;
+        margin-bottom: -0px
+    }
+    nav
+    {
+        padding-top: 40px;
+        background-color: black;
+        height: 150px;
+    }
+}
+
 #kontakt
 {
     display: inline-block;
+    
 }
 /*
   CSS for index siden
@@ -98,7 +130,7 @@ hr
 
 #mainImg 
 {
-    height: 500px;
+    height: 600px;
     width: 100%;
 }
 
@@ -134,6 +166,15 @@ Makes the code run if the width is less then the specified amount */
         top: 0px;
         margin-bottom: 0px;
         margin-top: 30px;
+    }
+    #indexMeny
+    {
+        height: 335px; 
+        width: 90%; 
+        background-color: #f9f9f6; 
+        text-align: left; 
+        left: 3%; 
+        position: relative;
     }
 }
 
