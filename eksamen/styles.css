@@ -5,7 +5,7 @@ main
 {
     text-align: center; 
     background-color: #f1ecda;
-    overflow:hidden
+    overflow:hidden;
 }
 nav
 {
@@ -148,6 +148,12 @@ Makes the code run if the width is less then the specified amount */
     }
 }
 
+a{
+    color: white;
+}
+ul{
+    list-style: none;
+}
 /*
   CSS for index siden
 */
@@ -212,13 +218,6 @@ Makes the code run if the width is less then the specified amount */
 } 
 
 /* Info og reservasjon siden*/
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-
 .container {
     background-color: rgb(212, 170, 114);
     box-shadow: rgb(94, 59, 13);
@@ -243,10 +242,19 @@ ul{
     text-align: center;
   }
 
-.heading-dager{
+.heading-dager
+{
    color: rgb(230, 184, 124);
    font-size: 20px;
-  }
+}
+@media (max-width: 1000px)
+{
+    .heading-dager
+    {
+        text-align: left;
+        font-size: 14px;
+    }
+}
 
 .container-form{
    padding: 20px 0;
