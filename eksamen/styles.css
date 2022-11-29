@@ -113,10 +113,6 @@ hr
 Makes the code run if the width is less then the specified amount */
 
 @media (max-width: 1000px){
-    #navMenyOnMobile
-    {
-        opacity: 1;
-    }
     #divKontaktInfo p
     {
         font-size: 12px;
@@ -136,9 +132,9 @@ Makes the code run if the width is less then the specified amount */
     }
     nav
     {
-        padding-top: 40px;
+        padding-top: 30px;
         background-color: black;
-        height: 200px;
+        height: 240px;
     }
     ul
     {
@@ -149,25 +145,27 @@ Makes the code run if the width is less then the specified amount */
         display:grid;
         float: none;
         background-color: gray;
-        
     }
+
     #navMenyOnMobile
     {
         opacity: 1;
+        background-color: gray;
+        color: white;
     }
     
+    #navMenyOnMobile:focus + ul + #resturantLogo
+    {
+        height: 0;
+    }
     #navMenyOnMobile:focus + ul
     {
         height: auto;
     }
-    #navMenyOnMobile:focus + #resturantLogo
-    {
-        height: 0px;
-    }
     
     ul:hover
     {
-        height: auto;
+        height: 200px;
     }
     ul:hover + #resturantLogo
     {
