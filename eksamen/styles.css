@@ -240,6 +240,7 @@ Makes the code run if the width is less then the specified amount */
 .heading{
     font-size: 35px;
     text-align: center;
+    color:#998100;
   }
 
 .heading-dager
@@ -259,7 +260,12 @@ Makes the code run if the width is less then the specified amount */
     {
         padding: 0px;
         text-align: left;
-        outline-offset:  -30px;
+        outline-offset: -30px;
+    }
+    .heading
+    {
+        font-size: 15px;
+        text-align: left;
     }
 }
 
