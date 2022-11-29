@@ -253,10 +253,13 @@ Makes the code run if the width is less then the specified amount */
     {
         text-align: left;
         font-size: 14px;
+        
     }
     .container-tid
     {
-        padding: 0;
+        padding: 0px;
+        text-align: left;
+        outline-offset:  -30px;
     }
 }
 
