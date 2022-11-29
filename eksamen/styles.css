@@ -7,6 +7,11 @@ main
     background-color: #f1ecda;
     overflow:hidden;
 }
+#navMenyOnMobile
+{
+    opacity: 0;
+}
+
 nav
 {
     padding-top: 40px;
@@ -106,7 +111,12 @@ hr
 }
 /* Code from https://stackoverflow.com/questions/4189868/what-does-media-screen-and-max-width-1024px-mean-in-css
 Makes the code run if the width is less then the specified amount */
-@media screen and (max-width: 1000px){
+
+@media (max-width: 1000px){
+    #navMenyOnMobile
+    {
+        opacity: 1;
+    }
     #divKontaktInfo p
     {
         font-size: 12px;
@@ -128,11 +138,49 @@ Makes the code run if the width is less then the specified amount */
     {
         padding-top: 40px;
         background-color: black;
-        height: 170px;
+        height: 200px;
+    }
+    ul
+    {
+        line-height: 30px;
+        height: 0px;
+        overflow: hidden;
+        padding: 0px;
+        display:grid;
+        float: none;
+        background-color: gray;
+        
+    }
+    #navMenyOnMobile
+    {
+        opacity: 1;
+    }
+    
+    #navMenyOnMobile:focus + ul
+    {
+        height: auto;
+    }
+    #navMenyOnMobile:focus + #resturantLogo
+    {
+        height: 0px;
+    }
+    
+    ul:hover
+    {
+        height: auto;
+    }
+    ul:hover + #resturantLogo
+    {
+        height: 0px;
     }
     li
     {
         font-size: 1.0em;
+        border:2px solid black ;
+    }
+    li a
+    {
+        display: block;
     }
     p
     {
@@ -166,13 +214,15 @@ ul{
 
 #indexMeny
 {
-    height: auto; 
-    width: 90%; 
+    height: 370px; 
+    width: 30%; 
     background-color: #f9f9f6; 
     text-align: left; 
-    left: 3%; 
+    left: 15%; 
     position: relative;
     padding-bottom: 15px;
+    z-index: 5;
+    padding-left: 10px;
 }
 #menyH2
 {
@@ -184,10 +234,11 @@ ul{
 #indexMenyImg
 {
     position: relative; 
-    left: 420px; 
-    top: -325px;
-    height: 325px; 
-    margin-bottom: -325px;
+    left: 120px; 
+    top: -385px;
+    height: 385px; 
+    z-index: 1;
+    margin-bottom: -350px;
 }
 /* Code from https://stackoverflow.com/questions/4189868/what-does-media-screen-and-max-width-1024px-mean-in-css
 Makes the code run if the width is less then the specified amount */
@@ -197,6 +248,7 @@ Makes the code run if the width is less then the specified amount */
         top: 0px;
         margin-bottom: 0px;
         margin-top: 30px;
+        height: auto;
     }
     #indexMeny
     {
@@ -247,6 +299,10 @@ Makes the code run if the width is less then the specified amount */
 {
    color: rgb(230, 184, 124);
    font-size: 20px;
+}
+#pInfo
+{
+    font-size: 15px;
 }
 @media (max-width: 1000px)
 {
