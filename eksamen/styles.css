@@ -97,6 +97,7 @@ hr
     color: white;
     position: relative;
     height: auto;
+    word-break: break-all;
 }
 #divKontaktInfo p
 {
@@ -212,7 +213,7 @@ ul{
 
 #indexMeny
 {
-    height: 370px; 
+    height: 280px; 
     width: 30%; 
     background-color: #f9f9f6; 
     text-align: left; 
@@ -232,11 +233,11 @@ ul{
 #indexMenyImg
 {
     position: relative; 
-    left: 120px; 
-    top: -385px;
+    left: 110px; 
+    top: -315px;
     height: 385px; 
     z-index: 1;
-    margin-bottom: -350px;
+    margin-bottom: -320px;
 }
 /* Code from https://stackoverflow.com/questions/4189868/what-does-media-screen-and-max-width-1024px-mean-in-css
 Makes the code run if the width is less then the specified amount */
