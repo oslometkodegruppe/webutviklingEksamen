@@ -184,7 +184,7 @@ Makes the code run if the width is less then the specified amount */
     
     ul:hover
     {
-        height: 200px;
+        height: auto;
     }
     ul:hover +  ul + #restaurantLogo
     {
