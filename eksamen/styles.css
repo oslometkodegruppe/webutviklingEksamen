@@ -174,7 +174,8 @@ Makes the code run if the width is less then the specified amount */
     /* Logoen forsvinner når man åpner navigasjonsmenyen */
     #navMenyOnMobile:focus + ul + #restaurantLogo
     {
-        height: 0;
+        height: 0px;
+        opacity: 0;
     }
     /* Navigasjonsmenyen går fra height: 0 til height: auto. Som gjør at menyen blir synlig.*/
     #navMenyOnMobile:focus + ul
@@ -189,6 +190,7 @@ Makes the code run if the width is less then the specified amount */
     ul:hover +  ul + #restaurantLogo
     {
         height: 0px;
+        opacity: 0;
     }
     li
     {
