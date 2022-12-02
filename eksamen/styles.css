@@ -498,6 +498,10 @@ form
     text-align: center;
     height: auto;
 }
+#wave
+{
+    width: 100%;
+}
 
 /* Tema siden */
 video
