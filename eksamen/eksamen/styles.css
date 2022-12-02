@@ -1,0 +1,553 @@
+/* 
+    CSS for alle sidene
+*/
+main 
+{
+    text-align: center; 
+    background-color: #f1ecda;
+    overflow:hidden;
+}
+
+nav
+{
+    padding-top: 30px;
+    background-color: black;
+    height: 120px;
+}
+#navMenyOnMobile
+{
+    opacity: 0;
+    background-color:#ebdd85; 
+    border: none;
+    border-radius: 50px;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;   
+    height: 60px; 
+    width:190px;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+li a:hover 
+{
+    color:gold;
+}
+
+li 
+{
+    float: left;
+    font-size: 1.2em;
+}
+
+li a 
+{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+}
+#resturantLogo
+{
+    float: left; position: relative; top: -15%; width: 15%; height: 115%; margin-bottom: -100px;
+}
+#logo2
+{
+    width: 80%;
+    height: 80%;
+}
+p 
+{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+strong
+{
+    font-size: 25px;
+}
+h1
+{ 
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+}
+    
+h2
+{
+    color: black;
+    text-align: center; 
+    margin-left:40px;
+    font-size: 2.5em; 
+}
+#button
+{
+    background-color: burlywood;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    width: 10%;
+}
+
+hr
+{
+    margin-top: 30px;
+}
+
+#divKontaktInfo
+{
+    border: 2px solid;
+    background-color: black;
+    color: white;
+    position: relative;
+    height: auto;
+    word-break: break-all;
+}
+#divKontaktInfo p
+{
+    font-size: 18px;
+}
+#kontakt
+{
+    padding-top: 5px;
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+}
+/* Code from https://stackoverflow.com/questions/4189868/what-does-media-screen-and-max-width-1024px-mean-in-css
+Makes the code run if the width is less then the specified amount */
+
+@media (max-width: 1000px){
+    #divKontaktInfo p
+    {
+        font-size: 12px;
+    }
+    #divKontaktInfo strong
+    {
+        font-size: 12px;
+    }
+    #resturantLogo
+    {
+        left: 30%; 
+        top: 0px;
+        width: 50%;
+        height: 60%;
+        position: none;
+        margin-bottom: -0px
+
+    }
+    nav
+    {
+        padding-top: 30px;
+        background-color: black;
+        height: 240px;
+    }
+    ul
+    {
+        line-height: 30px;
+        height: 0px;
+        overflow: hidden;
+        padding: 0px;
+        display:grid;
+        float: none;
+        background-color: gray;
+    }
+
+    #navMenyOnMobile
+    {
+        opacity: 1;
+        background-color: gray;
+        color: white;
+    }
+    
+    /* Logoen forsvinner når man åpner navigasjonsmenyen */
+    #navMenyOnMobile:focus + ul + #resturantLogo
+    {
+        height: 0;
+    }
+    /* Navigasjonsmenyen går fra height: 0 til height: auto. Som gjør at menyen blir synlig.*/
+    #navMenyOnMobile:focus + ul
+    {
+        height: auto;
+    }
+    
+    ul:hover
+    {
+        height: 200px;
+    }
+    ul:hover + #resturantLogo
+    {
+        height: 0px;
+    }
+    li
+    {
+        font-size: 1.0em;
+        border:2px solid black ;
+    }
+    
+    li a
+    {
+        display: block;
+    }
+    p
+    {
+        font-size: 20px;
+    }
+    #kontakt
+    {
+        height: 100px;
+    }
+    #h3
+    {
+        font-size: 16px;
+    }
+}
+
+a{
+    color: white;
+}
+ul{
+    list-style: none;
+}
+/*
+  CSS for index siden
+*/
+
+#mainImg 
+{
+    height: 600px;
+    width: 100%;
+}
+#indexInfo
+{
+    height: auto; 
+    width: 50%; 
+    background-color: #f9f9f6; 
+    text-align: left; 
+    left: 30%; 
+    position: relative;
+    padding-bottom: 35px;
+    z-index: 5;
+    padding-left: 10px;
+}
+
+#indexMeny
+{
+    height: auto; 
+    width: 30%; 
+    background-color: #f9f9f6; 
+    text-align: left; 
+    left: 15%; 
+    position: relative;
+    padding-bottom: 35px;
+    z-index: 5;
+    padding-left: 10px;
+}
+#menyH2
+{
+    color: black;
+    text-align: left;
+    margin-left:40px;
+    font-size: 2.5em; 
+}
+#indexMenyImg
+{
+    position: relative; 
+    left: 110px; 
+    top: -315px;
+    height: 385px; 
+    z-index: 1;
+    margin-bottom: -320px;
+}
+/* Code from https://stackoverflow.com/questions/4189868/what-does-media-screen-and-max-width-1024px-mean-in-css
+Makes the code run if the width is less then the specified amount */
+@media screen and (max-width: 1000px){
+    #indexMenyImg{
+       left: 0px; 
+        top: 0px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+
+    #indexInfo
+    {
+        height: auto;
+        width: 90%; 
+        background-color: #f9f9f6; 
+        text-align: left; 
+        left: 3%; 
+        position: relative;
+        padding-bottom: 15px
+    }
+
+    #indexMeny
+    {
+        height: auto;
+        width: 90%; 
+        background-color: #f9f9f6; 
+        text-align: left; 
+        left: 3%; 
+        position: relative;
+        padding-bottom: 15px
+    }
+}
+
+/*Meny siden*/
+#imgMeny
+{ 
+    opacity:0.9;
+    filter: brightness(35%);
+    width: 100%;
+    z-index: -1;
+} 
+
+#bilde
+{
+    position: relative;
+    color: white;
+}
+
+#meny{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 120px;
+    color: white;
+}
+
+#omRestaurant
+{
+    position: absolute;
+    top:65%;
+    left: 10%;
+    font-size:30px;
+    color:white;
+    font-weight:400;
+    font-family:serif;
+}
+#bookBord
+ {
+    position:absolute;
+    background-color:#ebdd85; 
+    border: none;
+    border-radius: 50px;
+    top: 85%;
+    left:20%;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;   
+    height: 60px; 
+    width:190px;   
+}
+#bookBord a
+{
+    text-decoration: none; 
+    color: black;
+}
+
+#overskrift
+{
+    font-size: 35px;
+    text-align:center;
+}
+
+#allergier
+{ 
+    font-style: italic;
+}
+
+@media (max-width: 1000px)
+{
+    #bilde {opacity: 1;}
+    #meny
+    {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        color: black;
+    }
+
+    #omRestaurant
+    {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        color: black;
+    }
+    #bookBord
+    {
+        position:relative;
+        top: 0%;
+        left: 0%;
+        color: black;
+    }
+    #bookBord
+    {
+        color: black;
+    }
+}
+
+/* Info og reservasjon siden*/
+.container {
+    background-color: rgb(118, 74, 15);
+    box-shadow: rgb(94, 59, 13);
+    display: grid;
+    grid-template-columns: 45% 35%;
+  }
+.container-tid
+{
+    background-color: rgb(38, 2, 2);
+    padding: 50px;
+    border: 3px dashed #998100;
+    outline-offset:  -30px;
+    text-align: center;
+}
+.container-reservasjon
+{
+    padding-left: 10%;
+}
+  
+.heading
+{
+    font-size: 35px;
+    text-align: center;
+    color:white;
+}
+
+.heading-dager
+{
+   color: white;
+   font-size: 20px;
+}
+
+@media (max-width: 1000px)
+{
+    .heading-dager
+    {
+        text-align: left;
+        font-size: 14px;
+        
+    }
+    .container-tid
+    {
+        padding: 0px;
+        text-align: left;
+        outline-offset: -30px;
+    }
+    .heading
+    {
+        font-size: 15px;
+        text-align: left;
+    }
+}
+
+.container-form{
+   padding: 20px 0;
+   margin: 0 auto;
+   color: black;
+  }
+
+form
+{
+    display: grid;   
+    grid-row-gap: 20px;
+}
+
+  .form-field{
+    display:flex;
+    justify-content: space-between;
+    
+  }
+
+  #h1Info{
+    text-align: center;
+    font-size: 55px;
+  }
+ 
+  
+#pInfo{
+    border-bottom: 1.5px solid rgb(54, 26, 5);
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#463c00;
+    font-size: x-large;
+    font-weight: lighter;
+    letter-spacing: 1px;     
+}
+#pReservasjonInfo{
+    border-bottom: 1.5px solid rgb(54, 26, 5);
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: x-large;
+    font-weight: lighter;
+    letter-spacing: 1px;     
+} 
+
+#h2Info
+{
+    text-align: center;
+    color: olive;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Tilgjengelighet siden */
+#tekstTilgjenglihet
+{
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    height: auto;
+}
+#wave
+{
+    width: 100%;
+}
+
+/* Tema siden */
+video
+{
+    height:30%;
+    width:100%;
+    object-fit: cover;
+}
+#tekstTema
+{
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    height: auto;
+}
+#annonseTema
+{
+    height:60%;
+    width:100%;
+    object-fit: cover;
+    background-color: black;
+    color:gold;
+    position: fixed;
+    top: 90%;
+    left: 0%;
+}
+#annonseTema a
+{
+    text-decoration: none; 
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <button id="navMenyOnMobile">Navigasjonsmeny</button>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="info.html">Reservasjoner</a> </li>
+                <li><a href="meny.html">Meny</a></li>
+                <li><a href="tilgjengelighetSiden.html">Tilgjengelighet</a></li>
+                <li><a href="tema.html">Tema</a></li>
+            </ul>
+            
+            <a href="index.html"><img id="resturantLogo" src="logo2.png" alt="logo"></a>
+            
+        </nav>
+        <div id="tekstTilgjenglihet">
+            <h1>Velkommen til tilgjenglighets siden!</h1>
+            <h2>Her skriver vi hva vi gjorde for å gjøre siden vår så tilgjenlig som mulig.</h2>
+            <p> Vi brukte verktøy som color picker generator til å velge farger for at det skal vere god kontrast mellom teksten og bakgrunnen. 
+            Det gjør det enklere for svaksynte å løse teksten. Vi sørget også for å ha stor fontstørelse på teksten slik at den er 
+            enkel å lese både på mobil og på avstand.</p>
+            <p>
+            Et av punktene i Universal Design handler om forståelig informasjon. Dermed har vi tatt i bruk ofte store bokstaver for å markere det viktigste. 
+            Et annet prinsipp er at det er like muligheter for bruk på ulike skjermer, som for eksempel mobil og datamaskiner. Dette har vi fikset på alle sidene våre slike at det skal funke på de ulike enhetene.
+            </p>
+
+            <h2>Vi kjørte koden vår gjennom et web accsessibility evaluation tool</h2>
+            <img src="wave1.PNG" id="wave" alt="Kjermbilde av wave">
+            <p>
+                Wave la merke til at logoen vår ikke hadde alternative text og at flere av bildene våre hadde samme titel og 
+                alternative tekst (navnet til fotografen) Det fikset vi ved å skrive om på alternative teksten til 
+                å beskre hva som kjer på bildene
+            </p>
+            <img src="wave.PNG" id="wave" alt="Kjermbilde av wave">
+            <p>
+                På meny siden fikk vi beksjed om at det var for lite kontrast mellom bildet og teksten. Det gjorde det vanskligere å leste hva som sto der. Vi løste problemet med å endre på fargen til teksten og med å redusere brightness verdien til bildet.
+            </p>
+            <img src="wave2.PNG" id="wave" alt="Kjermbilde av wave">
+            <p>
+                På reservasjon siden så mente Wave at det var dårlig kontrast mellom en overskrivt og bakgrunnen. Derfor endret vi den delen av siden for å gjøre inholdet klarere. Wave kommenterte også at input feltene våre mangler form label, noe som ikke er et problem for oss ettersom at input elementene ikke er ment til å gjøre noe med informasjonen som ble skrevet inn. 
+            </p>
+
+        </div>
+        
+
+            <div id="divKontaktInfo">
+                <footer>
+                    <div id="kontakt">
+                        <h3 id="h3"> KONTAKT</h3>
+                        <p>Akersgata 10</p>
+                        <p>0252 Oslo</p>
+                        <a href="mailto:Stedsholder@gmail.com">stedsholder@gmail.com</a>
+                        <br>
+                        <a href="tel:11111111">+47 111 11 111</a>
+                    </div>
+                    
+                    <div id="kontakt">
+                        <img src="logo2.png" alt="logo" id="logo2">
+                    </div>
+                    
+                    <div id="kontakt">
+                        <h3 id="h3">ÅPNINGSTID</h3>
+                        <p>Mandag-fredag 11.00-20.00</p>
+                        <p>Lørdag-søndag 12.00- 21.00</p>
+                    </div>
+                </footer>
+            </div>
+    </main>
+</body>
+</html>
