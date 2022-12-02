@@ -10,7 +10,7 @@ main
 
 nav
 {
-    padding-top: 40px;
+    padding-top: 30px;
     background-color: black;
     height: 120px;
 }
@@ -57,7 +57,7 @@ li a
 }
 #resturantLogo
 {
-    float: left; position: relative; top: -15%; width: 15%; height: 90%; margin-bottom: -100px;
+    float: left; position: relative; top: -15%; width: 15%; height: 115%; margin-bottom: -100px;
 }
 #logo2
 {
@@ -142,9 +142,10 @@ Makes the code run if the width is less then the specified amount */
         left: 30%; 
         top: 0px;
         width: 50%;
-        height: 70%;
+        height: 60%;
         position: none;
         margin-bottom: -0px
+
     }
     nav
     {
@@ -306,6 +307,7 @@ Makes the code run if the width is less then the specified amount */
 #imgMeny
 { 
     opacity:0.9;
+    filter: brightness(45%);
     width: 100%;
     z-index: -1;
 } 
@@ -340,7 +342,6 @@ Makes the code run if the width is less then the specified amount */
     background-color:#ebdd85; 
     border: none;
     border-radius: 50px;
-    color: black;
     top: 85%;
     left:20%;
     padding: 15px 32px;
@@ -355,6 +356,7 @@ Makes the code run if the width is less then the specified amount */
 #bookBord a
 {
     text-decoration: none; 
+    color: black;
 }
 
 #overskrift
@@ -487,6 +489,15 @@ form
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
+/* Tilgjengelighet siden */
+#tekstTilgjenglihet
+{
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    height: auto;
+}
 
 /* Tema siden */
 video
@@ -495,11 +506,13 @@ video
     width:100%;
     object-fit: cover;
 }
-#pTema
+#tekstTema
 {
-    width: 80%;
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: center;
-    left: 40%;
+    height: auto;
 }
 #annonseTema
 {
@@ -511,7 +524,6 @@ video
     position: fixed;
     top: 90%;
     left: 0%;
-    
 }
 #annonseTema a
 {
