@@ -10,7 +10,7 @@ main
 
 nav
 {
-    padding-top: 30px;
+    padding-top: 40px;
     background-color: black;
     height: 120px;
 }
@@ -55,7 +55,7 @@ li a
     text-decoration: none;
     color: white;
 }
-#resturantLogo
+#restaurantLogo
 {
     float: left; position: relative; top: -15%; width: 15%; height: 115%; margin-bottom: -100px;
 }
@@ -137,21 +137,21 @@ Makes the code run if the width is less then the specified amount */
     {
         font-size: 12px;
     }
-    #resturantLogo
+    #restaurantLogo
     {
         left: 30%; 
         top: 0px;
         width: 50%;
         height: 60%;
         position: none;
-        margin-bottom: -0px
+        margin-bottom: -0px;
 
     }
     nav
     {
         padding-top: 30px;
         background-color: black;
-        height: 240px;
+        height: 290px;
     }
     ul
     {
@@ -186,7 +186,7 @@ Makes the code run if the width is less then the specified amount */
     {
         height: 200px;
     }
-    ul:hover + #resturantLogo
+    ul:hover +  ul + #restaurantLogo
     {
         height: 0px;
     }
