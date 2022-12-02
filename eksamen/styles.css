@@ -172,7 +172,7 @@ Makes the code run if the width is less then the specified amount */
     }
     
     /* Logoen forsvinner når man åpner navigasjonsmenyen */
-    #navMenyOnMobile:focus + ul + #resturantLogo
+    #navMenyOnMobile:focus + ul + #restaurantLogo
     {
         height: 0;
     }
@@ -307,7 +307,7 @@ Makes the code run if the width is less then the specified amount */
 #imgMeny
 { 
     opacity:0.9;
-    filter: brightness(45%);
+    filter: brightness(35%);
     width: 100%;
     z-index: -1;
 } 
@@ -323,16 +323,16 @@ Makes the code run if the width is less then the specified amount */
     top: 40%;
     left: 15%;
     font-size: 120px;
-    color: #f1ec9c;
+    color: white;
 }
 
 #omRestaurant
 {
     position: absolute;
     top:65%;
-    left: 15%;
+    left: 10%;
     font-size:30px;
-    color:#f1ec9c;
+    color:white;
     font-weight:400;
     font-family:serif;
 }
@@ -375,28 +375,35 @@ Makes the code run if the width is less then the specified amount */
     #bilde {opacity: 1;}
     #meny
     {
-        position: none;
+        position: relative;
         top: 0%;
         left: 0%;
+        color: black;
     }
 
-    #omResturant
+    #omRestaurant
     {
-        position: none;
+        position: relative;
         top: 0%;
         left: 0%;
+        color: black;
     }
     #bookBord
     {
         position:relative;
         top: 0%;
         left: 0%;
+        color: black;
+    }
+    #bookBord
+    {
+        color: black;
     }
 }
 
 /* Info og reservasjon siden*/
 .container {
-    background-color: rgb(212, 170, 114);
+    background-color: rgb(118, 74, 15);
     box-shadow: rgb(94, 59, 13);
     display: grid;
     grid-template-columns: 45% 35%;
@@ -423,7 +430,7 @@ Makes the code run if the width is less then the specified amount */
 
 .heading-dager
 {
-   color: rgb(230, 184, 124);
+   color: white;
    font-size: 20px;
 }
 
@@ -471,6 +478,7 @@ form
     font-size: 55px;
   }
  
+  
 #pInfo{
     border-bottom: 1.5px solid rgb(54, 26, 5);
     padding-bottom: 30px;
@@ -481,7 +489,17 @@ form
     font-weight: lighter;
     letter-spacing: 1px;     
 }
- 
+#pReservasjonInfo{
+    border-bottom: 1.5px solid rgb(54, 26, 5);
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: x-large;
+    font-weight: lighter;
+    letter-spacing: 1px;     
+} 
+
 #h2Info
 {
     text-align: center;
