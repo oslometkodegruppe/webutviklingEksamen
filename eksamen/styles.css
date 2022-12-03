@@ -172,13 +172,13 @@ Makes the code run if the width is less then the specified amount */
     }
     
     /* Logoen forsvinner når man åpner navigasjonsmenyen */
-    #navMenyOnMobile:focus + ul + #restaurantLogo
+    #navMenyOnMobile:focus ~ #restaurantLogo
     {
         height: 0px;
         opacity: 0;
     }
     /* Navigasjonsmenyen går fra height: 0 til height: auto. Som gjør at menyen blir synlig.*/
-    #navMenyOnMobile:focus + ul
+    #navMenyOnMobile:focus ~ ul
     {
         height: auto;
     }
@@ -187,7 +187,7 @@ Makes the code run if the width is less then the specified amount */
     {
         height: auto;
     }
-    ul:hover +  ul + #restaurantLogo
+    ul:hover ~ ul ~ #restaurantLogo
     {
         height: 0px;
     }
@@ -286,18 +286,22 @@ Makes the code run if the width is less then the specified amount */
         height: auto;
         width: 90%; 
         background-color: #f9f9f6; 
-        text-align: left; 
+        text-align: center; 
         left: 3%; 
         position: relative;
         padding-bottom: 15px
     }
 
+    #menyH2
+    {
+        text-align: center;
+    }
     #indexMeny
     {
         height: auto;
         width: 90%; 
         background-color: #f9f9f6; 
-        text-align: left; 
+        text-align: center; 
         left: 3%; 
         position: relative;
         padding-bottom: 15px
@@ -380,6 +384,7 @@ Makes the code run if the width is less then the specified amount */
         top: 0%;
         left: 0%;
         color: black;
+        font-size: 90px;
     }
 
     #omRestaurant
