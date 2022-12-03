@@ -413,7 +413,7 @@ Makes the code run if the width is less then the specified amount */
     background-color: rgb(118, 74, 15);
     box-shadow: rgb(94, 59, 13);
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
   }
 .container-tid
 {
@@ -491,22 +491,9 @@ form
 
 @media (max-width: 1000px)
 {
-    .heading-dager
+    .container
     {
-        text-align: left;
-        font-size: 14px;
-        
-    }
-    .container-tid
-    {
-        padding: 0px;
-        text-align: center;
-        
-    }
-    .heading
-    {
-        font-size: 15px;
-        text-align: left;
+        grid-template-columns: none;
     }
 }
 /* Tilgjengelighet siden */
