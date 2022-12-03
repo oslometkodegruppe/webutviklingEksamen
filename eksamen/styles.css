@@ -118,12 +118,22 @@ hr
 {
     font-size: 18px;
 }
+/* Fargen til epost adressen og telefon nummeret */
+#divKontaktInfo a
+{
+    color: white;
+}
+
 #kontakt
 {
     padding-top: 5px;
     display: inline-block;
     width: 30%;
     height: 150px;
+}
+
+ul{
+    list-style: none;
 }
 /* Code from https://stackoverflow.com/questions/4189868/what-does-media-screen-and-max-width-1024px-mean-in-css
 Makes the code run if the width is less then the specified amount */
@@ -171,15 +181,11 @@ Makes the code run if the width is less then the specified amount */
         color: white;
     }
     
-    /* Jeg hadde et problem med å bruke general sibling (~) med :fokus selectoren. 
-    Dette problemet eksisterte bare på safari. Chrome og Edge hadde ikke dette problemet.
-    Animasjons koden og mer informasjon om problemet finner man på  https://css-tricks.com/webkit-sibling-bug/
-    Bare koden til body og @-webkit ble tatt derfra. */
-    body
-    {
-        -webkit-animation: bugfix infinite 1s;
-    }
-    @-webkit-keyframes bugfix {from {padding: 0;} to {padding: 0;}}
+    /* Navigasjonsmenyen fungerer på alle søkemotorer borsett fra safari. 
+    General sibling og :fokus selectoren fungerer ikke på safari, pga en bug i safari. 
+    Mer informasjon om bugen kan finnes på https://css-trics.com/webkit-sibling-bug
+    Denne buggen gjør at navigasjonsmenyen ikke fungerer på safari.
+
     /* Logoen forsvinner når man åpner navigasjonsmenyen */
     #navMenyOnMobile:focus ~ #restaurantLogo
     {
@@ -224,12 +230,6 @@ Makes the code run if the width is less then the specified amount */
     }
 }
 
-a{
-    color: white;
-}
-ul{
-    list-style: none;
-}
 /*
   CSS for index siden
 */
@@ -321,7 +321,7 @@ Makes the code run if the width is less then the specified amount */
 #imgMeny
 { 
     opacity:0.9;
-    filter: brightness(35%);
+    filter: brightness(30%);
     width: 100%;
     z-index: -1;
 } 
@@ -565,4 +565,5 @@ video
 #annonseTema a
 {
     text-decoration: none; 
+    color: white;
 }
