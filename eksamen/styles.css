@@ -244,7 +244,7 @@ Makes the code run if the width is less then the specified amount */
     height: auto; 
     width: 50%; 
     background-color: #f9f9f6; 
-    text-align: left; 
+    text-align: center; 
     left: 30%; 
     position: relative;
     padding-bottom: 35px;
@@ -257,7 +257,7 @@ Makes the code run if the width is less then the specified amount */
     height: auto; 
     width: 30%; 
     background-color: #f9f9f6; 
-    text-align: left; 
+    text-align: center; 
     left: 15%; 
     position: relative;
     padding-bottom: 35px;
@@ -267,7 +267,7 @@ Makes the code run if the width is less then the specified amount */
 #menyH2
 {
     color: black;
-    text-align: left;
+    text-align: center;
     margin-left:40px;
     font-size: 2.5em; 
 }
@@ -294,23 +294,15 @@ Makes the code run if the width is less then the specified amount */
     {
         height: auto;
         width: 90%; 
-        background-color: #f9f9f6; 
-        text-align: center; 
         left: 3%; 
         position: relative;
         padding-bottom: 15px
     }
 
-    #menyH2
-    {
-        text-align: center;
-    }
     #indexMeny
     {
         height: auto;
         width: 90%; 
-        background-color: #f9f9f6; 
-        text-align: center; 
         left: 3%; 
         position: relative;
         padding-bottom: 15px
@@ -421,7 +413,7 @@ Makes the code run if the width is less then the specified amount */
     background-color: rgb(118, 74, 15);
     box-shadow: rgb(94, 59, 13);
     display: grid;
-    grid-template-columns: 45% 35%;
+    grid-template-columns: 60% 40%;
   }
 .container-tid
 {
@@ -434,6 +426,9 @@ Makes the code run if the width is less then the specified amount */
 .container-reservasjon
 {
     padding-left: 10%;
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: auto auto;
 }
   
 .heading
@@ -449,33 +444,6 @@ Makes the code run if the width is less then the specified amount */
    font-size: 20px;
 }
 
-@media (max-width: 1000px)
-{
-    .heading-dager
-    {
-        text-align: left;
-        font-size: 14px;
-        
-    }
-    .container-tid
-    {
-        padding: 0px;
-        text-align: left;
-        outline-offset: -30px;
-    }
-    .heading
-    {
-        font-size: 15px;
-        text-align: left;
-    }
-}
-
-.container-form{
-   padding: 20px 0;
-   margin: 0 auto;
-   color: black;
-  }
-
 form
 {
     display: grid;   
@@ -485,21 +453,19 @@ form
   .form-field{
     display:flex;
     justify-content: space-between;
-    
   }
 
   #h1Info{
     text-align: center;
     font-size: 55px;
   }
- 
   
 #pInfo{
     border-bottom: 1.5px solid rgb(54, 26, 5);
     padding-bottom: 30px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    color:#463c00;
+    color:black;
     font-size: x-large;
     font-weight: lighter;
     letter-spacing: 1px;     
@@ -518,9 +484,30 @@ form
 #h2Info
 {
     text-align: center;
-    color: olive;
+    color: black;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1000px)
+{
+    .heading-dager
+    {
+        text-align: left;
+        font-size: 14px;
+        
+    }
+    .container-tid
+    {
+        padding: 0px;
+        text-align: center;
+        
+    }
+    .heading
+    {
+        font-size: 15px;
+        text-align: left;
+    }
 }
 /* Tilgjengelighet siden */
 #tekstTilgjenglihet
@@ -566,4 +553,8 @@ video
 {
     text-decoration: none; 
     color: white;
+}
+#annonseTema a:hover
+{
+    color: gold;
 }
