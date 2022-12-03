@@ -190,7 +190,6 @@ Makes the code run if the width is less then the specified amount */
     ul:hover +  ul + #restaurantLogo
     {
         height: 0px;
-        opacity: 0;
     }
     li
     {
