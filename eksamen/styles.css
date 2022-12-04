@@ -320,7 +320,7 @@ ul{
 #imgMeny
 { 
     opacity:0.9;
-    filter: brightness(30%);
+    filter: brightness(25%);
     width: 100%;
     z-index: -1;
 } 
@@ -472,15 +472,6 @@ ul{
     text-align: center;
     color:white;
 }
-#pReservasjonInfo
-{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color:white;
-    font-size: x-large;
-    font-weight: lighter;
-    letter-spacing: 1px;     
-} 
 
 input {
     width: 100%;
@@ -507,6 +498,16 @@ form
     display: grid;   
     grid-row-gap: 20px;
 }
+
+#pReservasjonInfo
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: x-large;
+    font-weight: lighter;
+    letter-spacing: 1px;     
+} 
 
 .btn
 {
