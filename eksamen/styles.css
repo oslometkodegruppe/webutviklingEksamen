@@ -271,11 +271,10 @@ ul{
     padding-left: 10px;
     border-radius: 50px;
 }
-#menyH2
+#indexH2
 {
     color: black;
     text-align: center;
-    margin-left:40px;
     font-size: 2.5em; 
 }
 #indexMenyImg
@@ -312,6 +311,10 @@ ul{
         left: 3%; 
         position: relative;
         padding-bottom: 15px
+    }
+    .indexH2
+    {
+        font-size: 2em;
     }
 }
 
