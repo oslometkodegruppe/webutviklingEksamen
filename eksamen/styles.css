@@ -135,8 +135,8 @@ hr
 ul{
     list-style: none;
 }
-/* Code from https://stackoverflow.com/questions/4189868/what-does-media-screen-and-max-width-1024px-mean-in-css
-Makes the code run if the width is less then the specified amount */
+
+/* Makes the code run if the width is less then 1000px */
 
 @media (max-width: 1000px){
     #divKontaktInfo p
@@ -149,11 +149,11 @@ Makes the code run if the width is less then the specified amount */
     }
     #restaurantLogo
     {
-        left: 30%; 
+        left: 32%; 
         top: 0px;
-        width: 50%;
+        width: 200px;
         height: 60%;
-        position: none;
+        position: sticky;
         margin-bottom: -0px;
 
     }
@@ -245,7 +245,7 @@ Makes the code run if the width is less then the specified amount */
     width: 50%; 
     background-color: #f9f9f6; 
     text-align: center; 
-    left: 30%; 
+    left: 28%; 
     position: relative;
     padding-bottom: 35px;
     z-index: 5;
@@ -280,8 +280,7 @@ Makes the code run if the width is less then the specified amount */
     z-index: 1;
     margin-bottom: -320px;
 }
-/* Code from https://stackoverflow.com/questions/4189868/what-does-media-screen-and-max-width-1024px-mean-in-css
-Makes the code run if the width is less then the specified amount */
+/* Makes the code run if the width is less then the specified amount */
 @media screen and (max-width: 1000px){
     #indexMenyImg{
        left: 0px; 
