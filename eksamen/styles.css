@@ -151,7 +151,7 @@ ul{
     }
     #restaurantLogo
     {
-        left: 30%; 
+        left: 25%; 
         top: 0px;
         width: 200px;
         height: 60%;
@@ -247,10 +247,9 @@ ul{
     width: 50%; 
     background-color: #f9f9f6; 
     text-align: center; 
-    left: 28%; 
+    left: 25%; 
     position: relative;
     padding-bottom: 35px;
-    z-index: 5;
     padding-left: 10px;
 }
 
