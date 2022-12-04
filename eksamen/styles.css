@@ -29,6 +29,16 @@ nav
     height: 60px; 
     width:190px;
 }
+#restaurantLogo
+{
+    float: left; position: relative; top: -15%; width: 15%; height: 115%; margin-bottom: -100px;
+}
+
+.logo2
+{
+    width: 80%;
+    height: 80%;
+}
 ul 
 {
     list-style-type: none;
@@ -55,15 +65,8 @@ li a
     text-decoration: none;
     color: white;
 }
-#restaurantLogo
-{
-    float: left; position: relative; top: -15%; width: 15%; height: 115%; margin-bottom: -100px;
-}
-.logo2
-{
-    width: 80%;
-    height: 80%;
-}
+
+
 p 
 {
     font-size: 25px;
@@ -415,7 +418,7 @@ ul{
     display: grid;
     grid-template-columns: 55% 45%;
   }
-.container-tid
+.containerVelkommen
 {
     background-color: rgb(38, 2, 2);
     padding: 50px;
@@ -423,7 +426,7 @@ ul{
     outline-offset:  -30px;
     text-align: center;
 }
-.container-reservasjon
+.containerReservasjon
 {
     padding-left: 10%;
     display: grid;
@@ -438,7 +441,7 @@ ul{
     color:white;
 }
 
-.heading-dager
+.headingTekst
 {
    color: white;
    font-size: 20px;
@@ -450,7 +453,7 @@ form
     grid-row-gap: 20px;
 }
 
-  .form-field{
+  .formField{
     display:flex;
     justify-content: space-between;
   }
