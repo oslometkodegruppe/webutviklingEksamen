@@ -472,6 +472,29 @@ ul{
     text-align: center;
     color:white;
 }
+#pReservasjonInfo
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size: x-large;
+    font-weight: lighter;
+    letter-spacing: 1px;     
+} 
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
 
 #headingTekst
 {
