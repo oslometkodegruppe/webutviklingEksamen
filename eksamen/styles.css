@@ -412,12 +412,40 @@ ul{
 }
 
 /* Info og reservasjon siden*/
-.container {
+/* Css-en til første delen av reservasjon siden */
+#h1Info
+{
+    text-align: center;
+    font-size: 55px;
+}
+#pInfo
+{
+    border-bottom: 1.5px solid rgb(54, 26, 5);
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-size: x-large;
+    font-weight: lighter;
+    letter-spacing: 1px;     
+}
+#h2Info
+{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Koden til informasjon boksen og reservasjon boksen */
+.container 
+{
     background-color: rgb(118, 74, 15);
     box-shadow: rgb(94, 59, 13);
     display: grid;
     grid-template-columns: 55% 45%;
-  }
+    height: auto;
+}
 .containerVelkommen
 {
     background-color: rgb(38, 2, 2);
@@ -434,14 +462,14 @@ ul{
     grid-template-columns: auto auto;
 }
   
-.heading
+#heading
 {
     font-size: 35px;
     text-align: center;
     color:white;
 }
 
-.headingTekst
+#headingTekst
 {
    color: white;
    font-size: 20px;
@@ -458,22 +486,8 @@ form
     justify-content: space-between;
   }
 
-  #h1Info{
-    text-align: center;
-    font-size: 55px;
-  }
-  
-#pInfo{
-    border-bottom: 1.5px solid rgb(54, 26, 5);
-    padding-bottom: 30px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color:black;
-    font-size: x-large;
-    font-weight: lighter;
-    letter-spacing: 1px;     
-}
-#pReservasjonInfo{
+#pReservasjonInfo
+{
     border-bottom: 1.5px solid rgb(54, 26, 5);
     padding-bottom: 30px;
     text-align: center;
@@ -484,12 +498,9 @@ form
     letter-spacing: 1px;     
 } 
 
-#h2Info
+.btn
 {
-    text-align: center;
-    color: black;
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
+   height: 40px;
 }
 
 @media (max-width: 1000px)
