@@ -254,6 +254,8 @@ ul{
     position: relative;
     padding-bottom: 35px;
     padding-left: 10px;
+    border-radius: 60%;
+    border: 1px solid #f9f9f6;
 }
 
 #indexMeny
@@ -267,6 +269,7 @@ ul{
     padding-bottom: 35px;
     z-index: 5;
     padding-left: 10px;
+    border-radius: 40%;
 }
 #menyH2
 {
