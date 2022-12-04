@@ -254,7 +254,7 @@ ul{
     position: relative;
     padding-bottom: 35px;
     padding-left: 10px;
-    border-radius: 60%;
+    border-radius: 50px;
     border: 1px solid #f9f9f6;
 }
 
@@ -269,7 +269,7 @@ ul{
     padding-bottom: 35px;
     z-index: 5;
     padding-left: 10px;
-    border-radius: 40%;
+    border-radius: 50px;
 }
 #menyH2
 {
