@@ -508,23 +508,6 @@ form
     grid-row-gap: 20px;
 }
 
-  .formField{
-    display:flex;
-    justify-content: space-between;
-  }
-
-#pReservasjonInfo
-{
-    border-bottom: 1.5px solid rgb(54, 26, 5);
-    padding-bottom: 30px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color:white;
-    font-size: x-large;
-    font-weight: lighter;
-    letter-spacing: 1px;     
-} 
-
 .btn
 {
    height: 40px;
