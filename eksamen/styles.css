@@ -59,7 +59,7 @@ li a
 {
     float: left; position: relative; top: -15%; width: 15%; height: 115%; margin-bottom: -100px;
 }
-#logo2
+.logo2
 {
     width: 80%;
     height: 80%;
@@ -122,15 +122,17 @@ hr
 #divKontaktInfo a
 {
     color: white;
+    text-decoration: none;
 }
 
-#kontakt
+.kontakt
 {
     padding-top: 5px;
     display: inline-block;
     width: 30%;
     height: 150px;
 }
+
 
 ul{
     list-style: none;
@@ -149,7 +151,7 @@ ul{
     }
     #restaurantLogo
     {
-        left: 32%; 
+        left: 30%; 
         top: 0px;
         width: 200px;
         height: 60%;
@@ -220,11 +222,11 @@ ul{
     {
         font-size: 20px;
     }
-    #kontakt
+    .kontakt
     {
         height: 100px;
     }
-    #h3
+    .h3
     {
         font-size: 16px;
     }
